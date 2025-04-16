@@ -1,17 +1,34 @@
 *{
   padding: 0;
   margin: 0;
+  width: 100vw;
+  height: 100vh;
   box-sizing: border-box;
   font-family: sans-serif;
-  color: white;
+  color: #1F1E1E;
 }
 
-.latar-belakang{
+
+body{
   background-color: #1F1E1E;
-  height: 100vh;
+  
+}
+
+#root {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+}
+.latar-belakang{
+  background-color: black;
+  position: relative;
+  height: 152.778vw;
   display: flex;
+  width: 83.333vw;
   justify-content: center;
   align-items: center;
+  
 }
 
 .kotak-rezeki{
@@ -44,8 +61,72 @@
   margin-top: 1.146vw;
 }
 
-.kotak-kanan img{
-  width: 20.573vw;
-  height: 29.479vw;
-  margin-top: 3.958vw;
+.kotak-kanan2{
+  /* width: 20.573vw;
+  height: 29.479vw; */
+  /* margin-top: 3.958vw; */
+  position: absolute;
+  bottom: 0;
+  right: 7.5vw;
 }
+
+.pc{
+  display: block;
+}
+
+.mb{
+ width: 83.333vw;
+ height: 152.778vw;
+}
+
+.mb{
+  display: none;
+}
+
+@media (max-width: 720px) {
+.pc{
+  display: none
+  
+}
+.mb{
+  display: block;
+}
+}
+
+
+ .kotak-kanan2{
+  width: 54.861vw;
+  height: 60.611vw;
+
+}
+
+
+.mb .judul{
+  width:24.861vw;
+  height: 3.333vw;
+}
+
+.mb .judul2{
+  width: 47.083vw;
+  height: 14.167vw;
+}
+
+.mb .text{
+  width: 64.861vw;
+  height: 21.389vw;
+}
+
+
+.mb .text{
+  font-size: 2.5vw;
+}
+
+.mb .judul{
+font-size: 2.778vw;
+}
+
+.mb .judul2{
+  font-size: 5.833vw;
+}
+
+  
